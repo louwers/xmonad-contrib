@@ -47,5 +47,5 @@ import XMonad
 execScriptHook :: MonadIO m => String -> m ()
 execScriptHook hook = do
   xmonadDir <- getXMonadDir
-  let script = xmonadDir ++ "/hooks "
+  let script = xmonadDir ++ "/hooks/"
   spawn (script ++ hook)
